@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href={% static "/css/style.css" %}>
+
+    </head>
+    <body>
+        <header>
+            <br>
+            <img id="profile-photo" src={% static "/media/foto.png" %} alt="">
+            <i class="fab fa-github-alt "></i>
+            <i class="fas fa-envelope "></i>
+        <!--    <i class="fas fa-user-circle "></i> -->
+            <h1>Vractal</h1>
+            <h2>Relatos de um garoto de programa</h2>
+
+
+
+
+
+        </header>
+        <main>
+            <section class="posts">
+                {% for post in posts %}
+                <article class="post">
+                    <h1>{{  post.title }}</h1>
+                    <small>Publicado em: {{ post.created_at }}</small>
+                    <p>{{ post.content_markdown | safe }}</p>
+
+
+                </article>
+
+
+                {% endfor %}
+
+            </section>
+        </main>
+    </body>
+</html>

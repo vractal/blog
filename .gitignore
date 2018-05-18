@@ -1,0 +1,4 @@
+.blog/
+.ropeproject/
+.activate
+db.sqlite3

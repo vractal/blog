@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../font/noto.woff2')
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #efefef;
+    background-color: #fff;
+    color: #3a4145;
+    font-family: "Noto Serif";
+    font-size: 20px;
+}
+
+
+
+header {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #303538;
+
+    width: 100%;
+    color: #fff;
+}
+
+#profile-photo {
+    width: 160px;
+    height: auto;
+    margin: 0.8rem auto;
+    display: block;
+
+
+}
+
+
+main {
+    width: 800px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 100px;
+
+}
+
+header {
+    text-align: center;
+
+}
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0px;
+    font-family: "Noto Serif";
+}
+
+header i {
+    font-size: 30px;
+    margin: 0.2rem;
+
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-size: 3rem;
+    margin: 0.1rem;
+}
+
+article h1 {
+    font-family: "Open Sans";
+    font-size: 2.5rem;
+}
+
+/* NOTE:
+h1 {
+    font-family: 'Simplifica';
+    font-size: 88px;
+
+}
+h2 {
+    font-family: 'Simplifica';
+    font-size: 601px;
+}
+
+p {
+        font-family: 'Helvetica Neue';
+        font-size: 24px;
+}
+
+*/
+
+article {
+    border-bottom: #ebf2f6 1px solid;
+}
