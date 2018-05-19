@@ -25,7 +25,7 @@ SECRET_KEY = 'pmh%okayum0w89ydtll=-@===opjs*=yvsimt!em!43!8l+m8+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vps.fractopia.org']
 
 
 # Application definition
