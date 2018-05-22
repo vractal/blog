@@ -19,8 +19,8 @@ class Post(models.Model):
     content = models.TextField()
     tags = models.ManyToManyField(Tag)
     created_at = models.DateTimeField(default=timezone.now)
-    slug = models.SlugField(unique=True,default=uuid.uuid4) 
-       #published_at = models.DateTimeField(default=None)
+    slug = models.SlugField(unique=True,default=uuid.uuid4)
+    #published_at = models.DateTimeField(default=None)
 
     def __str__(self):
         return self.title

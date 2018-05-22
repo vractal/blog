@@ -10,15 +10,19 @@
 <main>
 
     <nav>
+        {% if project_menu %}
+            {{ project_menu.content_markdown | safe }}
+        {% else %}
         <ul>
-            <li>Introdução</li>
-            <li>Rodada 1</li>
+            <li><a href="/post/introducao-adao">Introdução</a></li>
+            <li><a href="/post/primeira-rodada">Rodada 1</a></li>
             <ul>
                 <li>Blog</li>
                 <li>Gerenciador financeiro</li>
 
             </ul>
         </ul>
+        {% endif %}
     </nav>
     <section class="posts">
         {% for post in posts %}
