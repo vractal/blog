@@ -1,25 +1,12 @@
 {% extends 'base.html' %}
 
 {% block heading %}
-<h1>Projeto Adão</h1>
-<h2>A construção de um assistente virtual</h2>
+<h1>Blog</h1>
+<h2>Relatos de um garoto de programa</h2>
 {% endblock %}
 
 {% block body %}
-
 <main>
-
-    <nav>
-        <ul>
-            <li>Introdução</li>
-            <li>Rodada 1</li>
-            <ul>
-                <li>Blog</li>
-                <li>Gerenciador financeiro</li>
-
-            </ul>
-        </ul>
-    </nav>
     <section class="posts">
         {% for post in posts %}
         <article class="post">
