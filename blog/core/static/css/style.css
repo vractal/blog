@@ -132,3 +132,20 @@ article {
     margin-bottom: 2rem;
 
 }
+
+
+
+@media only screen and (max-width: 1600px){
+    main nav {
+        position: inherit;
+        margin: 2rem;
+
+    }
+    main .posts {
+        margin: 0px auto;
+        padding: 10px;
+        width: 90%;
+        max-width: 750px;
+        min-width: 300px;
+    }
+}
