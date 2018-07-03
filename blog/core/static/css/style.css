@@ -168,6 +168,11 @@ div.section p {
 }
 
 
+.container.bio {
+    max-width: 750px;
+
+}
+
 @media only screen and (max-width: 1600px){
     main nav {
         position: inherit;
