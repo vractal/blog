@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
+        {% block head %}{% endblock %}
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href={% static "/css/style.css" %}>
 
@@ -16,8 +17,9 @@
             <a href="/adao">Adao</a -->
             <br>
             <img id="profile-photo" src={% static "/media/foto.png" %} alt="">
-            <a title="Projeto Adao" href="/adao"><i class="fas fa-home"></a></i>
-            <a title="Blog" href="/blog"><i class="fas fa-user-circle "></a></i>
+            <a title="Blog" href="/blog"><i class="fas fa-home"></a></i>
+            <a title="Sobre mim" href="/eu"><i class="fas fa-user-circle "></a></i>
+            <a title="Projetos" href="/projetos"><i class="fas fa-briefcase"></i></a>
             <a title="Minha pagina no Github" href="https://github.com/vractal/"> <i class="fab fa-github-alt "></i></a>
             <a title="contato" href="mailto:victor@fractopia.org"> <i class="fas fa-envelope "></i></a>
 

@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block heading %}
+
+<h1>Projetos</h1>
+<h2>Aqui exponho alguns projetos realizados por mim</h2>
+    <br>
+
+{% endblock %}
+
+
+{% block body %}
+
+<main class="">
+
+
+    <section class="container projects">
+
+            <div class="section voli">
+
+                <h2 class="title">Vó Online</h2>
+
+                <a href="https://github.com/vractal/voli">
+{#                    <img src="https://i.imgur.com/Tt71wxI.png" alt=""><br>#}
+                    <img class="mobile-shot" src="{%  static "/media/voli.png" %}" alt="">
+{#                    <img class="mobile-shot" src=" https://i.imgur.com/slq85H3.png" alt="">#}
+                    <img class="mobile-shot" src="{%  static "/media/palmirinha.png" %}">
+                </a>
+
+                <p>
+                    Agregador de receitas desenvolvido em Python, utilizando a framework web Django.
+                    Novas entradas são adicionadas através de um bot no telegram e apresentadas em uma página responsiva de layout minimalista.
+                    Nesse projeto, foquei por em prática estudos recentes, trabalhando com commits atômicos, código limpo, bem organizado e testes.
+                </p>
+
+            </div>
+
+            <div class="section xela">
+
+                <h2 class="title">Website Xela Green</h2>
+
+                <a href="http://fractopia.org/xelagreen/final/index.html">
+                    <img src="{% static "/media/xelagreen-screenshot1.png" %}" alt="">
+{#                    <img src="{% static "/media/Captura de tela de 2018-06-28 11-51-52.png" %}" alt="">#}
+{#                    <img src="{% static "/media/Captura de tela de 2018-06-28 11-54-08.png" %}" alt="">#}
+                </a>
+
+                <p>Website responsivo desenvolvido para um restaurante vegano Guatemalteco. Recentemente o empreendimento fechou as portas, mas o site ainda pode ser
+                   conferido em meu domínio <a href="http://fractopia.org/xelagreen/final/index.html">AQUI</a>.</p>
+
+            </div>
+
+            <div class="section arca">
+
+                <h2 class="title">Arca de filmé</h2>
+                <a href="https://github.com/vractal/arca">
+                    <img src="{% static "/media/arca1.png" %}" alt="">
+{#                    <img src="https://i.imgur.com/NLP6jWA.png" alt="">#}
+{#                    <img src=" https://i.imgur.com/BpAubnZ.png" alt="">#}
+                </a>
+                <p>Aplicação para pesquisar e salvar filmes. Desenvolvida em Python, com o principal objetivo de estudar
+                    a construção de uma API Rest com a framework <a href="http://flask.pocoo.org/">Flask</a> e a integração
+                    com o JS no front-end. Os dados e posters dos filmes são extraídos de uma <a href="https://www.themoviedb.org/documentation/api">API externa</a>
+                    na primeira busca, populando um banco de dados local para pesquisas posteriores.</p>
+{#                    Se alguém quiser dar uma olhada funcionando, pode logar com admin/admin.#}
+
+            </div>
+
+            <div class="section gerfin">
+
+                <h2 class="title">Gerfin - Gerenciador Financeiro</h2>
+
+                <a href="https://github.com/vractal/gerfin">
+                    <img  class="mobile-shot" src="{%  static "/media/gerfin.png" %}" alt="">
+                </a>
+
+                <p>Um Bot de telegram simples que criei para facilitar meu controle das despesas.</p>
+
+            </div>
+
+            <div class="section pomodoro">
+
+                <h2 class="title">Pomodoro</h2>
+
+                <a href="https://github.com/vractal/pomodoro">
+                    <img class="mobile-shot" src="{%  static "/media/pomodoro.png" %}" alt="">
+                    <img class="mobile-shot" src="{%  static "/media/pomodoro-hist.png" %}" alt="">
+                </a>
+
+                <p>Aplicação desktop desenvolvida utilizando <a href="https://electronjs.org/">Electron</a>.
+                    Foi meu primeiro projeto pessoal, uma aplicação simples para ajudar a gerenciar meu tempo.
+                    O código está caótico e pedindo uma limpeza, mas como por hora segue cumprindo bem sua função como está,
+                    a refatoração só vai chegar acompanhada de novas features.</p>
+
+            </div>
+
+            <div class="section">
+                <h2 class="title">Este Blog</h2>
+
+                <p>O código desse blog também está disponível <a href="https://github.com/vractal/blog">AQUI</a> para quem queira estudá-lo ou reutilizá-lo.</p>
+
+            </div>
+
+
+    </section>
+
+</main>
+
+{% endblock %}

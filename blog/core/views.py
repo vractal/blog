@@ -19,9 +19,14 @@ def blog(request):
     except:
         tag = Tag.objects.create(name="blog",description="blog")
 
-    return render(request, "blog.html",{'posts':Post.objects.filter(
-                                        tags=tag).order_by('-created_at')})
+    #posts = Post.objects.filter(tags=tag).order_by('-created_at')
+    posts = Post.objects.all().exclude(slug="project-menu-markdown").order_by('-created_at')
 
+    return render(request, "blog.html",{'posts':posts})
+
+
+def eu(request):
+    return render(request,"eu.html")
 
 def post(request, slug):
     try:
@@ -37,3 +42,7 @@ def post(request, slug):
         return render(request,template, {'posts':[post], "project_menu":Post.objects.get(slug="project-menu-markdown")})
     except:
         raise Http404
+
+
+def projetos(request):
+    return render(request, template_name="projetos.html")
